@@ -1,0 +1,10 @@
+records
+venv
+.git
+.gitignore
+.idea
+TO_DO
+*.pyc
+~*.*
+*.*~
+__pycache__
