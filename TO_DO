@@ -4,6 +4,4 @@ TODO
 - learn docker-compose
 - put volume reading from .yml config
 TODO
-- pylint
-- pycodestyle
 - unittest
