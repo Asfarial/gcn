@@ -1,15 +1,9 @@
 TODO
-- verbose from kwargs
-- debug from kwargs or env
-- Reader.print(shrink) as kwarg
-TODO
-- Develop PSQL pipeline
 - Connect PSQL to Docker
 TODO
 - learn docker-compose
 - put volume reading from .yml config
 TODO
-- check-project CI-like script
 - pylint
 - pycodestyle
 - unittest
