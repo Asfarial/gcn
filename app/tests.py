@@ -2,7 +2,7 @@
 Unittest Module
 """
 import unittest
-from reader import Reader
+from app.reader import Reader
 
 
 class Discount(unittest.TestCase):

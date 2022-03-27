@@ -4,8 +4,8 @@ Reader Module
 import csv
 import gzip
 from tabulate import tabulate
-from core import FileSystemBase, Verbose
-from config import cmd_args
+from app.core import FileSystemBase, Verbose
+from app.config import cmd_args
 
 
 class ReaderBase(FileSystemBase, Verbose):

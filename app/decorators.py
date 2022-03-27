@@ -2,7 +2,7 @@
 Decorators Module
 """
 from typing import Callable
-from core import Verbose
+from app.core import Verbose
 
 
 def message(msg: str) -> Callable:

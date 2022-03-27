@@ -36,7 +36,7 @@ cmd_args = arg_parser()
 
 DEBUG = cmd_args.debug if cmd_args.debug else os.environ.get("DEBUG", False)
 
-FOLDER = "./records"
+FOLDER = "./app/records"
 EANS = "eans.csv"
 DATA = "product_data_0.csv.gz"
 
