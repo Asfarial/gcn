@@ -1,9 +1,11 @@
 GCN Data Pipeline
 ---
-<h3>Test Task</h>
+Test Task
 ____
+
 What does this application?
 --
+
 1) Download files from Google Drive
 2) Read, Parse, Filter downloaded files<br>
 2.1) According to Specification: eans - filtering and data - files
@@ -11,6 +13,7 @@ What does this application?
 4) Upload Data into DB
 
 ___
+
 Application Structure
 ---
 Python: 3.10<br>
