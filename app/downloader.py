@@ -3,7 +3,7 @@ Downloader Module
 """
 import os
 import requests
-from app.core import FileSystemBase, Verbose
+from core import FileSystemBase, Verbose
 
 
 class GoogleDriveDownloader(FileSystemBase, Verbose):

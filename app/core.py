@@ -5,7 +5,7 @@ with core features used over many other modules
 import os
 from typing import Callable
 from types import NoneType
-from app.config import FOLDER, EANS, DATA, cmd_args
+from config import FOLDER, EANS, DATA, cmd_args
 
 
 class Verbose:

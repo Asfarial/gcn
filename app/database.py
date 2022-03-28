@@ -5,8 +5,8 @@ To operate Database
 from typing import Any, Collection
 import psycopg2
 from psycopg2 import sql
-from app.core import Verbose
-from app.config import DB_USER, DB_PASSWORD, DB_HOST, DB_PORT, DATABASE
+from core import Verbose
+from config import DB_USER, DB_PASSWORD, DB_HOST, DB_PORT, DATABASE
 
 
 class DatabaseBase(Verbose):

@@ -1,12 +1,12 @@
 """
 Pipelines Module
 """
-from app.downloader import GoogleDriveDownloader
-from app.reader import Reader
-from app.database import Database
-from app.core import Verbose
-from app.config import cmd_args
-from app.decorators import message
+from downloader import GoogleDriveDownloader
+from reader import Reader
+from database import Database
+from core import Verbose
+from config import cmd_args
+from decorators import message
 
 
 @message("Starting Downloader Pipeline")

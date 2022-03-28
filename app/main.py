@@ -2,9 +2,9 @@
 GCN Test Task
 """
 
-from app.pipelines import downloader_pipeline
-from app.pipelines import reader_pipeline
-from app.pipelines import database_pipeline
+from pipelines import downloader_pipeline
+from pipelines import reader_pipeline
+from pipelines import database_pipeline
 
 
 def main() -> None:
