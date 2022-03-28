@@ -35,7 +35,8 @@ def reader_pipeline(verbose: bool = cmd_args.verbose) -> list:
     reader = Reader(verbose=verbose)
     eans = reader.read_eans()
     products = reader.read_data(eans)
-    Verbose.print(reader.print_out, products)
+    if not cmd_args.no_print_out:
+        Verbose.print(reader.print_out, products)
     return products
 
 

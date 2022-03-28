@@ -13,6 +13,13 @@ def arg_parser() -> argparse.Namespace:
     """
     parser = argparse.ArgumentParser(description="GCN Data Pipeline")
     parser.add_argument(
+        "-np",
+        "--no_print_out",
+        help="No print out of csv data",
+        required=False,
+        action="store_true",
+    )
+    parser.add_argument(
         "-v",
         "--verbose",
         help="Verbose output",
@@ -42,6 +49,6 @@ DATA = "product_data_0.csv.gz"
 
 DB_USER = os.environ.get("DB_USER", "test")
 DB_PASSWORD = os.environ.get("DB_PASSWORD", "test")
-DB_HOST = "127.0.0.1"
+DB_HOST = os.environ.get("DB_HOST", "127.0.0.1")
 DB_PORT = "5432"
 DATABASE = os.environ.get("DATABASE", "test")

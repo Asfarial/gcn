@@ -1,7 +1,2 @@
 TODO
-- Connect PSQL to Docker
-TODO
-- learn docker-compose
-- put volume reading from .yml config
-TODO
-- unittest
+- More Unittests

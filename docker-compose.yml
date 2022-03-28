@@ -1,6 +1,29 @@
 version: "3.10"
 services:
-  app :
-    build: ./app/
   db:
     build: ./database/
+    ports:    # Set up ports exposed for other containers to connect to
+      - 5433:5432
+    networks:
+      - app-tier
+    volumes:
+      - mydb:/var/lib/postgresql/data
+
+  app:
+    build: ./app/
+    depends_on:
+      - db
+    links:
+      - db
+    networks:
+      - app-tier
+    volumes:
+      - myapp:/code
+
+volumes:
+  myapp:
+  mydb:
+
+networks:
+  app-tier:
+    driver: bridge

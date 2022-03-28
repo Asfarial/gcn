@@ -43,7 +43,7 @@ class ReaderBase(FileSystemBase, Verbose):
         return f"{100 - price * 100 / old_price:.0f}%"
 
     @staticmethod
-    def shrink_line(line: dict, length: int = 64) -> dict:
+    def shrink_line(line: dict, length: int = 10) -> dict:
         """
         Shrinks particular line
         called from self.shrink_list
@@ -57,7 +57,7 @@ class ReaderBase(FileSystemBase, Verbose):
         }
 
     @staticmethod
-    def shrink_list(records_list: list, length: int = 64) -> list:
+    def shrink_list(records_list: list, length: int = 10) -> list:
         """
         Shrinks list of records from Reader.print
         :param records_list:
